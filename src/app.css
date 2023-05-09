@@ -1,0 +1,38 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white dark:bg-slate-900 transition-colors duration-500 ease-out;
+}
+
+h1 {
+  @apply font-Kanit text-black dark:text-white font-bold text-6xl;
+}
+
+h2 {
+  @apply text-black dark:text-white duration-500 font-Kanit font-medium text-3xl;
+}
+
+h3 {
+  @apply text-black dark:text-white duration-500 font-Kanit font-light text-2xl;
+}
+
+p {
+  @apply font-Kanit text-black dark:text-white font-light;
+}
+
+span {
+  @apply text-black dark:text-white font-Kanit duration-500 font-thin;
+}
+
+#storybook-root {
+  @apply p-5;
+}
+
+#storybook-root.dark {
+  @apply bg-slate-900 w-full h-screen p-5;
+}
