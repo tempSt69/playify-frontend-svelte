@@ -122,7 +122,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Antoine Di Roberto - [![LinkedIn][linkedin-shield]][linkedin-url] - antoine.diroberto@gmail.com
 
-Project Link: [https://github.com/tempSt69/playify-backend](https://github.com/tempSt69/playify-backend)
+Project Link: [https://github.com/tempSt69/playify-backend](https://github.com/tempSt69/playify-frontend-sveltekit)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
