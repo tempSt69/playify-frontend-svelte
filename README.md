@@ -112,7 +112,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Streaming service
 - [x] Search service
-- [] Main CRUD
+- [ ] Main CRUD
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
