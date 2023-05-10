@@ -1,11 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/svelte";
+import type { Meta, StoryObj } from '@storybook/svelte';
 
-import List from "./List.svelte";
+import List from './List.svelte';
+import MockMusicContext from '../../../../.storybook/MockMusicContext.svelte';
 
 const meta = {
-  title: "Molecule/List",
+  title: 'Molecule/List',
   component: List,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
+  decorators: [() => MockMusicContext],
 } satisfies Meta<List>;
 
 export default meta;
@@ -15,39 +17,42 @@ export const Default: Story = {
   args: {
     items: [
       {
-        id: "1",
-        name: "Moto",
+        _id: '1',
+        name: 'Moto',
         duration: 120,
         artist: {
-          id: "1",
-          name: "Alekos",
-          cover: "ok",
+          _id: '1',
+          name: 'Alekos',
+          cover: 'ok',
         },
-        trackUrl: "try",
+        trackUrl: 'try',
+        trackType: 'mp3',
         active: false,
       },
       {
-        id: "2",
-        name: "Moto",
+        _id: '2',
+        name: 'Moto',
         duration: 120,
         artist: {
-          id: "1",
-          name: "Alekos",
-          cover: "ok",
+          _id: '1',
+          name: 'Alekos',
+          cover: 'ok',
         },
-        trackUrl: "try",
+        trackUrl: 'try',
+        trackType: 'mp3',
         active: true,
       },
       {
-        id: "3",
-        name: "Moto",
+        _id: '3',
+        name: 'Moto',
         duration: 120,
         artist: {
-          id: "1",
-          name: "Alekos",
-          cover: "ok",
+          _id: '1',
+          name: 'Alekos',
+          cover: 'ok',
         },
-        trackUrl: "try",
+        trackUrl: 'try',
+        trackType: 'mp3',
         active: false,
       },
     ],

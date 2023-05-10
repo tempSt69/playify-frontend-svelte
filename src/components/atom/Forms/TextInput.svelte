@@ -19,7 +19,7 @@
 
 <style lang="postcss">
   .input-field {
-    @apply relative text-lg bg-transparent w-full;
+    @apply relative text-lg bg-transparent w-full pl-5;
   }
 
   .input-field .wrapper {

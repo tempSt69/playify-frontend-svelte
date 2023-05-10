@@ -24,9 +24,9 @@
       <input
         type="range"
         bind:this={$progressBarRef}
-        value={timeProgress * 100 ?? 0}
+        value={timeProgress ?? 0}
         min="0"
-        max={duration * 100 ?? 0}
+        max={duration ?? 0}
         on:change={handleProgressChange}
       />
       <span class="text-right">{formatTime(duration)}</span>

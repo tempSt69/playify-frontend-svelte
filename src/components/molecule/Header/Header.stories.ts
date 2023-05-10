@@ -1,11 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/svelte";
+import type { Meta, StoryObj } from '@storybook/svelte';
+import MockThemeContext from '../../../../.storybook/MockThemeContext.svelte';
 
-import Header from "./Header.svelte";
+import Header from './Header.svelte';
 
 const meta = {
-  title: "Molecule/Header",
+  title: 'Molecule/Header',
   component: Header,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
+  decorators: [() => MockThemeContext],
 } satisfies Meta<Header>;
 
 export default meta;

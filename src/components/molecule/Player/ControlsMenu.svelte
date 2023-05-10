@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { Writable } from 'svelte/store';
   import ButtonPlayer from '../../atom/Buttons/ButtonPlayer.svelte';
   import type { PlayerContextType } from '../../../types/PlayerContext';
   import { getContext } from 'svelte';

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { Writable } from 'svelte/store';
   import Cover from '../../atom/Medias/Cover.svelte';
   import ControlsMenu from './ControlsMenu.svelte';
   export let cover: string =

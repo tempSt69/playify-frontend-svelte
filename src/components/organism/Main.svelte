@@ -18,7 +18,11 @@
 <div class="main">
   <div
     class="background"
-    style={`background-image:url('${song?.artist.cover}')`}
+    style={`background-image:url('${
+      song
+        ? song.artist.cover
+        : 'https://i.scdn.co/image/ab6761610000e5eb7b9c72b3e2f9226f5b426291'
+    }')`}
   />
   <div class="content">
     <Header />
@@ -30,7 +34,7 @@
             hasSong={song ? true : false}
           />
         </div>
-        <div class="w-7/12">
+        <div class="w-7/12 mx-4">
           <TextInput
             bindValue={bindSearchValue}
             placeholder="Type your favorite song..."

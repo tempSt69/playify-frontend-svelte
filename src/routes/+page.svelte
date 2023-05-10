@@ -22,7 +22,7 @@
   let progressBarRef = writable<HTMLInputElement>(undefined);
   let playing = writable(false);
   let timeProgress = writable<number>(0);
-  let theme = writable<'light' | 'dark'>('light');
+  let theme = writable<'light' | 'dark'>('dark');
 
   //functions
   const selectSong = (newSong: Song) => {

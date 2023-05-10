@@ -14,10 +14,10 @@
 
 <style lang="postcss">
   .song-info {
-    @apply flex items-center justify-start w-2/12 rounded-tr-xl h-20 bg-opacity-40 bg-slate-300 dark:bg-slate-700 dark:bg-opacity-40;
+    @apply p-3 flex items-center justify-start w-2/12 rounded-tr-xl h-20 bg-opacity-40 bg-slate-300 dark:bg-slate-700 dark:bg-opacity-40;
   }
 
   .song-info p {
-    @apply w-9/12 pl-1;
+    @apply w-9/12 pl-3;
   }
 </style>
