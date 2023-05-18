@@ -36,3 +36,19 @@ span {
 #storybook-root.dark {
   @apply bg-slate-900 w-full h-screen p-5;
 }
+
+/* progressbar dark mode */
+.dark input[type='range']::before {
+  background: #fff !important;
+}
+.dark input[type='range']::-moz-range-progress {
+  background: #fff !important;
+}
+.dark input[type='range']::-webkit-slider-thumb {
+  border: 2px solid #fff !important;
+  background-color: #000 !important;
+}
+.dark input[type='range']::-moz-range-thumb {
+  border: 3px solid #fff !important;
+  background-color: #000 !important;
+}

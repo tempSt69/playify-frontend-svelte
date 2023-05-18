@@ -2,7 +2,7 @@
   import type { HTMLInputTypeAttribute } from 'react';
   import type { Writable } from 'svelte/store';
 
-  export let bindValue: Writable<string>;
+  export let bindValue: Writable<any>;
   export let type: HTMLInputTypeAttribute = 'text';
   export let placeholder: string;
 

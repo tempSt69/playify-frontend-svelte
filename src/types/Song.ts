@@ -1,12 +1,10 @@
+import type Artist from './Artist';
+
 export default interface Song {
   _id: string;
   name: string;
-  artist: {
-    _id: string;
-    name: string;
-    cover: string;
-  };
+  artist: Artist;
   duration: number;
   trackUrl: string;
-  trackType:string;
+  trackType: string;
 }

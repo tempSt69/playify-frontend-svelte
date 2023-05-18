@@ -15,9 +15,11 @@
   let songs = writable<Song[]>(data.songs);
   const defaultSongsList = data.songs;
 
+  let start = true;
+
   //states
   let searchValue = writable<string>('');
-  let song = writable<Song>(undefined);
+  let song = writable<Song>($songs[0]);
   let audioRef = writable<HTMLAudioElement>(undefined);
   let progressBarRef = writable<HTMLInputElement>(undefined);
   let playing = writable(false);
@@ -45,7 +47,8 @@
 
   //subscribes (useEffect equivalent)
   song.subscribe(() => {
-    playing.set(true);
+    if (!start) playing.set(true);
+    else start = false;
   });
 
   timeProgress.subscribe(() => {

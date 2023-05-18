@@ -12,7 +12,7 @@
 
   const handleProgressChange = () => {
     if (hasSong && audioRef && $progressBarRef) {
-      audioRef.currentTime = parseInt($progressBarRef!.value) / 100;
+      audioRef.currentTime = parseInt($progressBarRef!.value);
     }
   };
 </script>
@@ -40,7 +40,7 @@
   }
 
   .progressbar .progress {
-    @apply flex gap-3 w-full justify-between items-center;
+    @apply flex w-full justify-between items-center;
   }
 
   .progressbar .progress span {
@@ -84,18 +84,12 @@
     top: 0;
     left: 0;
   }
-  html[data-mode='dark'] input[type='range']::before {
-    background: #fff;
-  }
   /* played progress length - firefox */
   input[type='range']::-moz-range-progress {
     background: #000;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
     height: 2px;
-  }
-  html[data-mode='dark'] input[type='range']::-moz-range-progress {
-    background: #fff;
   }
   /* slider thumb - chrome and safari */
   input[type='range']::-webkit-slider-thumb {
@@ -110,18 +104,10 @@
     transition: all;
     transition-duration: 0.3s;
   }
-  [data-mode='dark'] input[type='range']::-webkit-slider-thumb {
-    border: 2px solid #fff;
-    background-color: #000;
-  }
 
   /* dragging thumb - chrome and safari */
   input[type='range']:active::-webkit-slider-thumb {
     transform: scale(1.4);
-  }
-  [data-mode='dark'] input[type='range']::-moz-range-thumb {
-    border: 3px solid #fff;
-    background-color: #000;
   }
   /* slider thumb - firefox */
   input[type='range']::-moz-range-thumb {

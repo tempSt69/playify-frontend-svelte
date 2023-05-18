@@ -15,6 +15,6 @@
 
 <style lang="postcss">
   .player {
-    @apply flex flex-col gap-3 justify-between h-full w-full p-12 rounded-[50px] bg-opacity-40 bg-slate-300 dark:bg-slate-700 dark:bg-opacity-40;
+    @apply flex flex-col gap-3 justify-between h-full w-full pb-5 p-12 rounded-[50px] bg-opacity-40 bg-slate-300 dark:bg-slate-700 dark:bg-opacity-40;
   }
 </style>

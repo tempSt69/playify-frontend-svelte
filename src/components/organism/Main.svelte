@@ -1,12 +1,12 @@
 <script lang="ts">
   import type { Writable } from 'svelte/store';
   import type Song from '../../types/Song';
-  import TextInput from '../atom/Forms/TextInput.svelte';
   import Container from '../molecule/Container/Container.svelte';
   import Footer from '../molecule/Footer/Footer.svelte';
   import Header from '../molecule/Header/Header.svelte';
   import List from '../molecule/List/List.svelte';
   import Player from '../molecule/Player/Player.svelte';
+  import CustomInput from '../atom/Forms/CustomInput.svelte';
 
   export let bindSearchValue: Writable<string>;
   export let song: Song | undefined;
@@ -35,7 +35,7 @@
           />
         </div>
         <div class="w-7/12 mx-4">
-          <TextInput
+          <CustomInput
             bindValue={bindSearchValue}
             placeholder="Type your favorite song..."
           />

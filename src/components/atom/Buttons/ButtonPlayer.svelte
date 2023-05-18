@@ -22,7 +22,7 @@
       case 'large':
         return 'h-12 w-12 fa-lg';
       case 'xlarge':
-        return 'h-16 w-16 fa-lg';
+        return 'h-20 w-20 fa-2x';
     }
   };
 

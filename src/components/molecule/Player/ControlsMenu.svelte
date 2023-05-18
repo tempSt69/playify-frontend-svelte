@@ -8,11 +8,21 @@
 </script>
 
 <div class="p-5 w-full gap-x-10 flex justify-center">
-  <ButtonPlayer size="large" on:click={prev} iconName="backward-step" />
+  <ButtonPlayer
+    size="xlarge"
+    on:click={prev}
+    iconName="backward-step"
+    border={false}
+  />
   <ButtonPlayer
     size="xlarge"
     on:click={$playing ? pause : play}
     iconName={$playing ? 'pause' : 'play'}
   />
-  <ButtonPlayer size="large" on:click={next} iconName="forward-step" />
+  <ButtonPlayer
+    size="xlarge"
+    on:click={next}
+    iconName="forward-step"
+    border={false}
+  />
 </div>

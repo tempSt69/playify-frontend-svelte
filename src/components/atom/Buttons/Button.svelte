@@ -1,6 +1,6 @@
 <script lang="ts">
   export let type: 'submit' | 'button' = 'button';
-  export let primary: boolean;
+  export let primary: boolean = true;
   export let size: 'small' | 'medium' | 'large' = 'medium';
   export let label: string = '';
 

@@ -23,7 +23,7 @@
   <ButtonPlayer
     border={false}
     iconName={item.active && $playing ? 'pause' : 'play'}
-    size={'medium'}
+    size={'small'}
     on:click={item.active && $playing ? pause : play}
   />
   <h3 class="ml-5 text-black dark:text-white">{item.name}</h3>

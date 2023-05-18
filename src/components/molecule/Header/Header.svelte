@@ -7,8 +7,10 @@
 </script>
 
 <div class="header">
-  <ButtonPlayer iconName="play" border={false} size="medium" />
-  <ButtonPlayer iconName="gear" border={false} size="medium" />
+  <a href="/"><ButtonPlayer iconName="play" border={false} size="medium" /></a>
+  <a href="/add"
+    ><ButtonPlayer iconName="gear" border={false} size="medium" /></a
+  >
   <ButtonPlayer
     iconName={$theme === 'light' ? 'moon' : 'sun'}
     border={false}
